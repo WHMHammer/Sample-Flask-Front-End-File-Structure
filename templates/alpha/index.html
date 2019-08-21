@@ -1,12 +1,8 @@
 {% extends "alpha/base.html" %}
 
-{% block title %}
-    Alpha
-{% endblock %}
+{% set title = "Alpha" %}
 
-{% block alpha_head %}
-    <!--link rel="stylesheet" href="{{ url_for('static', filename='css/alpha/index.css') }}"-->
-{% endblock %}
+{#% set stylesheets = (url_for('static', filename='css/alpha/index.css'),) %#}
 
 {% block alpha_center %}
     <p>This is content specific to alpha index page.</p>
@@ -19,6 +15,4 @@
     <p>This is content specific to alpha index page.</p>
 {% endblock %}
 
-{% block alpha_body %}
-    <!--script src="{{ url_for('static', filename='js/alpha/index.js') }}"></script-->
-{% endblock %}
+{#% set scripts = (url_for('static', filename='js/alpha/index.js'),) %#}
