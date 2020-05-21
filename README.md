@@ -28,7 +28,7 @@ Run the following commands:
 
 `source venv/bin/activate`
 
-`pip3 install uwsgi blinker simplejson`
+`pip3 install uwsgi blinker simplejson flask`
 
 `uwsgi --http :80 --master --wsgi-file __init__.py --callable app`
 
